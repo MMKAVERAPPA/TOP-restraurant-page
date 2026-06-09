@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --frosted-mint: #dceed1;
+  --ash-grey: #aac0aa;
+  --dusty-lavender: #736372;
+  --dusty-taupe: #a18276;
+  --ash-brown: #6d544a;
+  --grey-olive: #7a918d;
+}
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  font-family: Roboto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 0px;
+  background-color: var(--ash-grey);
+}
+
+button {
+  padding: 14px 24px 14px 24px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--dusty-taupe);
+  color: white;
+}
+
+button:hover {
+  background-color: var(--ash-brown);
+  cursor: pointer;
+}
+
+button #clicked {
+  background-color: var(--ash-brown);
+}
+
+#content {
+  flex: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 240px 50px 240px;
+  padding: 0px 100px 40px 100px;
+  border-radius: 24px;
+  background-color: var(--frosted-mint);
+}
+
+.main-heading {
+  font-size: 50px;
+  border: 8px solid var(--ash-brown);
+  background-color: var(--ash-grey);
+  padding: 4px 20px 4px 20px;
+}
+
+.card {
+  border: 8px solid var(--ash-brown);
+  background-color: var(--ash-grey);
+  padding: 20px 40px;
+  width: 400px;
+  margin: 20px;
+}
+
+.sub-heading {
+  font-size: 30px;
+  border: 8px solid var(--ash-brown);
+  background-color: var(--ash-grey);
+  padding: 4px 20px 4px 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 4px;
+}
+
+footer {
+  text-align: center;
+  align-items: center;
+  padding: 6px;
+  background-color: var(--dusty-lavender);
+  color: var(--frosted-mint);
+}
